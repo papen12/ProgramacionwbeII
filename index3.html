@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div class="contenedor">
+        <form action="">
+            <h1>Formulario de registro</h1>
+            <div class="contenedorform">
+                <input id="nombre" type="text" placeholder="Nombre" maxlength="30"  autocomplete="off">
+                <i class='bx bx-user-pin' ></i>
+            </div>
+            <div class="contenedorform">
+                <input id="app1" type="text" placeholder="Primer apellido" maxlength="30" autocomplete="off">
+                <i class='bx bx-user-pin' ></i>
+            </div>
+            <div class="contenedorform">
+                <input id="app2" type="text" placeholder="Segundo apellido" maxlength="30" autocomplete="off">
+                <i class='bx bx-user-pin' ></i>
+            </div>
+            <div class="contenedorform">
+                <input id="curso" type="text" placeholder="Curso" maxlength="30" autocomplete="off">
+                <i class='bx bxs-graduation'></i>
+            </div>
+            <div class="divbtn">
+                <button id="guardar" type="button" onclick="Guardar()" class="btn">Registrar</button>
+                <button id="cancelar" type="submit" onclick="cancelar()" class="btn">Cancelar</button>
+            </div>
+        </form>
+    </div>
+    <table  id="tablaestudiantes">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido P</th>
+                <th>Apellido M</th>
+                <th>Curso</th>
+            </tr>
+        </thead>
+        <tbody id="tablabody"></tbody>
+    </table>
+    <script src="indexjs6.js"></script>
+</body>
+</html>
